@@ -1,5 +1,6 @@
-import React from 'react'
-import './Button.module.scss'
+import React from 'react';
+
+import './Button.module.scss';
 
 const Button = () => {
   return <button disabled>text</button>;

@@ -1,10 +1,10 @@
 {
   "name": "placie-ui",
-  "version": "1.0.0",
+  "version": "1.0.0-test-1",
   "description": "UI Components for PLACIE App",
   "author": "serozhkohanna",
   "license": "MIT",
-  "repository": "https://github.com/serozhkohanna/placie-ui",
+  "repository": "git://github.com/serozhkohanna/placie-ui.git",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
