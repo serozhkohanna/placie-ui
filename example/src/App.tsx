@@ -1,16 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import { Title } from "placie-ui";
-import { Button } from "placie-ui";
-
-import 'placie-ui/dist/index.css'
+import { Button } from 'placie-ui';
 
 const App = () => {
   return <>
-    <p>text</p>
     <Button />
-    <Title />
   </>
 }
 
-export default App
+export default App;
