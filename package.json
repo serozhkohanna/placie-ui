@@ -4,7 +4,7 @@
   "description": "UI Components for PLACIE App",
   "author": "serozhkohanna",
   "license": "MIT",
-  "repository": "serozhkohanna/placie-ui",
+  "repository": "https://github.com/serozhkohanna/placie-ui",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
