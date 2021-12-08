@@ -1,12 +1,14 @@
 import React from 'react';
 
+import './index.css';
+
 import { Button, Heading } from 'placie-ui';
 
 const App = () => {
   return <>
     <Button />
     <Heading
-      text={'random text'}
+      text="Title text"
       level={1}
     />
   </>;
