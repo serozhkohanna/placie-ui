@@ -12,7 +12,7 @@ export interface Props {
 const Heading: FC<Props> = ({ level, text }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
 
-  return <Tag className={classNames(styles.heading, styles.h)}>{text}</Tag>;
+  return <Tag className={classNames(styles.heading, styles[`heading-h${level}`])}>{text}</Tag>;
 };
 
 export default Heading;
