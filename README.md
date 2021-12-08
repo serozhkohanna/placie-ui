@@ -22,6 +22,12 @@ npm run build-storybook
 npm run storybook
 ```
 
+## Publish new version
+#### Change version in package.json file
+```bash
+npm publish
+```
+
 ## Usage
 
 ```tsx
