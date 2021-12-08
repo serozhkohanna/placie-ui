@@ -10,6 +10,18 @@
 npm install --save placie-ui
 ```
 
+## Start in local env
+
+```bash
+npm start
+```
+
+## Build and launch storybook
+```bash
+npm run build-storybook
+npm run storybook
+```
+
 ## Usage
 
 ```tsx

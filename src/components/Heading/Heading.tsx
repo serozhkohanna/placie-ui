@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 
 import classNames from 'classnames';
 
-import styles from './Heading.scss';
+import styles from './Heading.module.scss';
 
-interface Props {
+export interface Props {
   level: number;
   text: string;
 }
