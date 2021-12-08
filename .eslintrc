@@ -1,12 +1,9 @@
 {
   "parser": "@typescript-eslint/parser",
   "extends": [
-//    "standard",
-//    "standard-react",
-//    "plugin:prettier/recommended",
-//    "prettier/standard",
-//    "prettier/react",
-//    "plugin:@typescript-eslint/eslint-recommended"
+    "plugin:prettier/recommended",
+    "eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
   ],
   "env": {
     "node": true
@@ -20,15 +17,45 @@
   },
   "settings": {
     "react": {
-      "version": "16"
+      "version": "*"
     }
   },
   "rules": {
-    "space-before-function-paren": 0,
-    "react/prop-types": 0,
-    "react/jsx-handler-names": 0,
-    "react/jsx-fragments": 0,
-    "react/no-unused-prop-types": 0,
-    "import/export": 0
+    "react/destructuring-assignment": ["error", "always"],
+    "space-before-function-paren": ["error", "always"],
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react-hooks/rules-of-hooks": "error",
+    "no-unexpected-multiline": "error",
+    "react/jsx-filename-extension": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-underscore-dangle": 0,
+    "require-yield": 0,
+    "no-console": 1,
+    "semi": 2,
+    "no-extra-boolean-cast": 0,
+
+    "prettier/prettier": [
+      "off",
+      {
+        "space-before-function-paren": "never"
+      }
+    ],
+
+    "react/button-has-type": ["error", {
+      "button": true,
+      "submit": true,
+      "reset": true
+    }],
+
+    "no-unused-vars": 0,
+
+    "max-len": ["error", 120, 2, {
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true,
+      "ignoreComments": false,
+      "ignoreStrings": true,
+      "ignoreUrls": true
+    }],
+    "@typescript-eslint/explicit-function-return-type": "error"
   }
 }
