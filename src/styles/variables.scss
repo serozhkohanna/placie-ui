@@ -1,3 +1,35 @@
+@import "breakpoints";
+
 $tablet: 768px;
 $laptop: 1024px;
 $desktop: 1440px;
+
+$bodyFontSize: 14px;
+$bodyFontSizeSmall: 12px;
+
+$headingH1: 24px;
+$headingH2: 28px;
+
+//Inputs
+$inputLabelFontSize: 12px;
+$inputFontSize: 10px;
+$inputSearchFontSize: $bodyFontSize;
+
+//LabelFont
+$labelFontSize: $bodyFontSize;
+
+//Buttons
+$buttonLevel1FontSize: 16px;
+
+$tagFontSize: 11px;
+$tabFontSize: 18px;
+$subHeadingFontSize: 18px;
+
+// DESKTOP/TABLET STYLES (from 768px)
+@include medium {
+  $headingH2: 36px;
+  $inputLabelFontSize: 14px;
+  $inputFontSize: 11px;
+  $buttonLevel1FontSize: 18px;
+  $subHeadingFontSize: 20px;
+}
