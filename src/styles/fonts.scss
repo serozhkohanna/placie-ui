@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700;900&display=swap');
 
+@import "breakpoints";
+
 $SourceSerifPro: 'Source Serif Pro', serif;
 $Yantramanav: 'Yantramanav', sans-serif;
+
+$bodyFontSize: 14px;
+$bodyFontSizeSmall: 12px;
+
+$headingH1: 24px;
+$headingH2: 28px;
+
+//Inputs
+$inputLabelFontSize: 12px;
+$inputFontSize: 10px;
+$inputSearchFontSize: $bodyFontSize;
+
+//LabelFont
+$labelFontSize: $bodyFontSize;
+
+//Buttons
+$buttonLevel1FontSize: 16px;
+
+$tagFontSize: 11px;
+$tabFontSize: 18px;
+$subHeadingFontSize: 18px;
+
+// DESKTOP/TABLET STYLES (from 768px)
+@include medium {
+  $headingH2: 36px;
+  $inputLabelFontSize: 14px;
+  $inputFontSize: 11px;
+  $buttonLevel1FontSize: 18px;
+  $subHeadingFontSize: 20px;
+}
