@@ -2,16 +2,16 @@ import React from 'react';
 
 import './index.css';
 
-import { Button, Heading } from 'placie-ui';
+import { Button, Heading, Input } from 'placie-ui';
 
 const App = () => {
   const handleClick = () => {
     console.log('click');
-  }
+  };
 
   return <>
     <Button
-      text='BUTTON'
+      text="BUTTON"
       level={1}
       disabled={false}
       onClick={handleClick}
@@ -23,6 +23,15 @@ const App = () => {
     <Heading
       text="Title text second"
       level={2}
+    />
+    <Input
+      label="Enter place"
+      type="text"
+      value="text text"
+      placeholder="please enter smth"
+      name="field-input"
+      isRequired
+      onChange={() => console.log('text')}
     />
   </>;
 };

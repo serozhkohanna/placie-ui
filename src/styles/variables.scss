@@ -7,6 +7,8 @@ $bodyFontSizeSmall: 12px;
 $headingH1: 24px;
 $headingH2: 28px;
 
+$fontWeightNormal: 400;
+$fontWeightMedium: 500;
 $fontWeightBold: 700;
 
 $borderRadiusSmall: 5px;
@@ -16,7 +18,9 @@ $letterSpacingSmall: .5px;
 //Inputs
 $inputLabelFontSize: 12px;
 $inputFontSize: 10px;
+$inputHeight: 30px;
 $inputSearchFontSize: $bodyFontSize;
+
 
 //LabelFont
 $labelFontSize: $bodyFontSize;
