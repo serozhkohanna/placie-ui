@@ -1,4 +1,37 @@
-button {
-  color: red;
+@import "src/styles/variables";
+@import "src/styles/breakpoints";
+@import "src/styles/colors";
+
+.button {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $borderRadiusSmall;
+  letter-spacing: $letterSpacingSmall;
+
+  &:disabled {
+    opacity: .7;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    filter: contrast(1.5);
+    cursor: pointer;
+  }
+
+  &-l1 {
+    width: $buttonLevel1Width;
+    height: $buttonLevel1Height;
+    background: $gray;
+    color: $light;
+    font-size: $buttonLevel1FontSize;
+
+    @include medium {
+      width: 200px;
+      height: 50px;
+      font-size: 16px;
+    }
+  }
 }
 

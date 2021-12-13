@@ -1,36 +1,23 @@
-@import "./src/styles/fonts";
-@import "./src/styles/breakpoints";
-@import "./src/styles/colors";
+@import "src/styles/variables";
+@import "src/styles/colors";
+@import "src/styles/breakpoints";
 
 .heading {
-  font-weight: 700;
+  font-weight: $fontWeightBold;
   font-family: $SourceSerifPro;
   color: $gray;
 
   &-h1 {
-    @include medium {
-    //
-    }
+    font-family: $Yantramanav;
+    font-size: $headingH1;
+    text-transform: uppercase;
   }
 
   &-h2 {
-    color: green;
-  }
-
-  &-h3 {
-    color: green;
-  }
-
-  &-h4 {
-    color: green;
-  }
-
-  &-h5 {
-    color: green;
-  }
-
-  &-h6 {
-    color: green;
+    font-size: $headingH2;
+    @include medium {
+      font-size: 36px;
+    }
   }
 }
 

@@ -1,3 +1,35 @@
-$tablet: 768px;
-$laptop: 1024px;
-$desktop: 1440px;
+$SourceSerifPro: 'Source Serif Pro', serif;
+$Yantramanav: 'Yantramanav', sans-serif;
+
+$bodyFontSize: 14px;
+$bodyFontSizeSmall: 12px;
+
+$headingH1: 24px;
+$headingH2: 28px;
+
+$fontWeightNormal: 400;
+$fontWeightMedium: 500;
+$fontWeightBold: 700;
+
+$borderRadiusSmall: 5px;
+
+$letterSpacingSmall: .5px;
+
+//Inputs
+$inputLabelFontSize: 12px;
+$inputFontSize: 10px;
+$inputHeight: 30px;
+$inputSearchFontSize: $bodyFontSize;
+
+
+//LabelFont
+$labelFontSize: $bodyFontSize;
+
+//Buttons
+$buttonLevel1FontSize: 14px;
+$buttonLevel1Width: 180px;
+$buttonLevel1Height: 40px;
+
+$tagFontSize: 11px;
+$tabFontSize: 18px;
+$subHeadingFontSize: 18px;

@@ -4,6 +4,7 @@
 
 /idea
 .idea/
+.editorconfig
 
 # dependencies
 node_modules
