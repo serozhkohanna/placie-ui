@@ -4,48 +4,44 @@
 
 .inputWrapper {
   font-family: $Yantramanav;
+}
+
+.input {
+  height: $inputHeight;
+  width: 100%;
+  font-size: $inputFontSize;
+  padding: 0 10px;
+  color: $gray;
+  border-radius: $borderRadiusSmall;
+  background: $white;
+  font-weight: $fontWeightNormal;
+
+  ::placeholder {
+    color: $gray-muted;
+  }
 
   @include medium {
-    max-width: 300px;
+    font-size: 12px;
+    height: 35px;
+  }
+}
+
+.label {
+  font-size: $inputLabelFontSize;
+  color: $gray;
+  font-weight: $fontWeightMedium;
+  margin-bottom: 5px;
+  display: block;
+  padding: 0 10px;
+
+  @include medium {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
-  .input {
-    height: $inputHeight;
-    width: 100%;
-    font-size: $inputFontSize;
-    padding: 0 10px;
-    color: $gray;
-    border-radius: $borderRadiusSmall;
-    background: $white;
-    font-weight: $fontWeightNormal;
-
-    ::placeholder {
-      color: $gray-muted;
-    }
-
-    @include medium {
-      font-size: 12px;
-      height: 35px;
-    }
-  }
-
-  .label {
-    font-size: $inputLabelFontSize;
-    color: $gray;
-    font-weight: $fontWeightMedium;
-    margin-bottom: 5px;
-    display: block;
-    padding: 0 10px;
-
-    @include medium {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    &.isRequired {
-      &::after {
-        content: '*';
-      }
+  &.isRequired {
+    &::after {
+      content: '*';
     }
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import { Button, Heading, Input } from 'placie-ui';
+import { Button, Heading, Input, SearchInput } from 'placie-ui';
 
 const App = () => {
   const handleClick = () => {
@@ -32,6 +32,12 @@ const App = () => {
       name="field-input"
       isRequired
       onChange={() => console.log('text')}
+    />
+    <SearchInput
+      value=""
+      placeholder="please enter smth"
+      onChange={() => console.log('text')}
+      onClick={() => console.log('text')}
     />
   </>;
 };
