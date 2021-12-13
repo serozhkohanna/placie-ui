@@ -1,14 +1,13 @@
-@import "breakpoints";
-
-$tablet: 768px;
-$laptop: 1024px;
-$desktop: 1440px;
+$SourceSerifPro: 'Source Serif Pro', serif;
+$Yantramanav: 'Yantramanav', sans-serif;
 
 $bodyFontSize: 14px;
 $bodyFontSizeSmall: 12px;
 
 $headingH1: 24px;
 $headingH2: 28px;
+
+$fontWeightBold: 700;
 
 //Inputs
 $inputLabelFontSize: 12px;
@@ -24,12 +23,3 @@ $buttonLevel1FontSize: 16px;
 $tagFontSize: 11px;
 $tabFontSize: 18px;
 $subHeadingFontSize: 18px;
-
-// DESKTOP/TABLET STYLES (from 768px)
-@include medium {
-  $headingH2: 36px;
-  $inputLabelFontSize: 14px;
-  $inputFontSize: 11px;
-  $buttonLevel1FontSize: 18px;
-  $subHeadingFontSize: 20px;
-}

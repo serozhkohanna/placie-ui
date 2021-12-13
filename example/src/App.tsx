@@ -11,6 +11,10 @@ const App = () => {
       text="Title text"
       level={1}
     />
+    <Heading
+      text="Title text second"
+      level={2}
+    />
   </>;
 };
 
