@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-import './Button.module.scss';
+import classNames from 'classnames';
 
-const Button = () => {
-  return <button disabled>text</button>;
+import styles from './Button.module.scss';
+
+interface Props {
+  level: number;
+  text: string;
+  disabled?: boolean;
+  onClick: () => void;
+}
+
+const Button: FC<Props> = ({ onClick, level, text, disabled }: Props) => {
+  return <button
+    onClick={onClick}
+    disabled={disabled}
+    className={classNames(styles.button, styles[`button-l${level}`])}
+  >{text}</button>;
 };
 
 export default Button;

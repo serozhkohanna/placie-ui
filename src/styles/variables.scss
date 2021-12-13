@@ -9,6 +9,10 @@ $headingH2: 28px;
 
 $fontWeightBold: 700;
 
+$borderRadiusSmall: 5px;
+
+$letterSpacingSmall: .5px;
+
 //Inputs
 $inputLabelFontSize: 12px;
 $inputFontSize: 10px;
@@ -18,7 +22,9 @@ $inputSearchFontSize: $bodyFontSize;
 $labelFontSize: $bodyFontSize;
 
 //Buttons
-$buttonLevel1FontSize: 16px;
+$buttonLevel1FontSize: 14px;
+$buttonLevel1Width: 180px;
+$buttonLevel1Height: 40px;
 
 $tagFontSize: 11px;
 $tabFontSize: 18px;

@@ -5,8 +5,17 @@ import './index.css';
 import { Button, Heading } from 'placie-ui';
 
 const App = () => {
+  const handleClick = () => {
+    console.log('click');
+  }
+
   return <>
-    <Button />
+    <Button
+      text='BUTTON'
+      level={1}
+      disabled={false}
+      onClick={handleClick}
+    />
     <Heading
       text="Title text"
       level={1}
