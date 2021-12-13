@@ -1,6 +1,6 @@
 {
   "name": "placie-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "UI Components for PLACIE App",
   "author": "serozhkohanna",
   "license": "MIT",
@@ -70,6 +70,7 @@
     "dist"
   ],
   "dependencies": {
+    "react-icons": "^4.3.1",
     "sass": "^1.44.0",
     "tar": "^6.1.11"
   }

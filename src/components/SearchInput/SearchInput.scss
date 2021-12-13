@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+@import "src/styles/breakpoints";
+@import "src/styles/colors";
+
+.searchWrapper {
+  position: relative;
+}
+
+.searchInput {
+  height: $inputSearchHeight;
+  font-size: 14px;
+}
+
+.iconBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: $inputSearchHeight;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    font-size: 20px;
+    color: $gray-muted;
+  }
+}
