@@ -2,6 +2,8 @@ import React, { FC } from 'react';
 
 import classNames from 'classnames';
 
+import InputLabel from '../InputLabel/InputLabel';
+
 import styles from './Input.scss';
 
 interface Props {
@@ -20,17 +22,14 @@ interface Props {
 const Input: FC<Props> = ({ label, value, name, type, placeholder, onChange, isRequired, className, children, customInput }: Props) => {
   return <div className={classNames(styles.inputWrapper, customInput)}>
     {label &&
-      <label
-        htmlFor="inputField"
-        className={classNames(styles.label, {
-          [styles.isRequired]: isRequired,
-        })}
-      >
-        {label}
-      </label>
+      <InputLabel
+        label={label}
+        isRequired={isRequired}
+        htmlFor={name}
+      />
     }
     <input
-      id="inputField"
+      id={name}
       value={value}
       name={name}
       type={type}

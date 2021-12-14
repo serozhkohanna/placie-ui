@@ -2,26 +2,18 @@
 @import "src/styles/colors";
 @import "src/styles/breakpoints";
 
-.inputWrapper {
+.wrapper {
+  display: flex;
+  flex-direction: column;
   font-family: $Yantramanav;
 }
 
-.input {
+.select {
   height: $inputHeight;
-  width: 100%;
-  font-size: $inputFontSize;
-  padding: 0 10px;
+  width: 180px;
   color: $gray;
   border-radius: $borderRadiusSmall;
   background: $white;
   font-weight: $fontWeightNormal;
-
-  ::placeholder {
-    color: $gray-muted;
-  }
-
-  @include medium {
-    font-size: 12px;
-    height: 35px;
-  }
+  padding: 0 10px;
 }

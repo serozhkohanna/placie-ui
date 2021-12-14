@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import { Button, Heading, Input, SearchInput } from 'placie-ui';
+import { Button, Heading, Input, SearchInput, Select } from 'placie-ui';
 
 const App = () => {
   const handleClick = () => {
@@ -38,6 +38,27 @@ const App = () => {
       placeholder="please enter smth"
       onChange={() => console.log('text')}
       onClick={() => console.log('text')}
+    />
+
+    <Select
+      label='Choose distance'
+      name='select'
+      onChange={(value: string) => console.log(value, 'current value')}
+      isRequired
+      options={[
+        {
+          value: 'string',
+          label: 'string',
+          id: 'string',
+          selected: true,
+        },
+        {
+          value: 'string2',
+          label: 'string2',
+          id: 'string2',
+          selected: false,
+        }
+      ]}
     />
   </>;
 };
