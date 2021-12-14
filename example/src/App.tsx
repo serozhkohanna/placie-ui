@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import { Button, Heading, Input, SearchInput, Select } from 'placie-ui';
+import { Button, Heading, Input, SearchInput, Select, Toggle } from 'placie-ui';
 
 const App = () => {
   const handleClick = () => {
@@ -41,8 +41,8 @@ const App = () => {
     />
 
     <Select
-      label='Choose distance'
-      name='select'
+      label="Choose distance"
+      name="select"
       onChange={(value: string) => console.log(value, 'current value')}
       isRequired
       options={[
@@ -57,8 +57,12 @@ const App = () => {
           label: 'string2',
           id: 'string2',
           selected: false,
-        }
+        },
       ]}
+    />
+    <Toggle
+      isToggled={true}
+      onChange={() => console.log('toggle')}
     />
   </>;
 };

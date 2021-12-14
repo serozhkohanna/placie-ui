@@ -3,7 +3,8 @@ import Heading from './components/Heading/Heading';
 import Input from './components/Input/Input';
 import SearchInput from './components/SearchInput/SearchInput';
 import Select from './components/Select/Select';
+import Toggle from './components/Toggle/Toggle';
 
 export * from '../src/styles/reset.scss';
 
-export { Button, Heading, Input, SearchInput, Select };
+export { Button, Heading, Input, SearchInput, Select, Toggle };
