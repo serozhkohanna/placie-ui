@@ -1,0 +1,54 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+
+$toggleBtnSize: 25px;
+
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + .switch::before {
+      content: 'YES';
+      transform: translateX(28px);
+      background-color: $yellow;
+      color: $white;
+    }
+  }
+}
+
+.switch {
+  position: absolute;
+  height: $inputHeight;
+  width: $inputToggleWidth;
+  background-color: $white;
+  border-radius: $borderRadiusSmall;
+  font-family: $Yantramanav;
+  color: $gray;
+  font-size: $inputFontSize;
+  font-weight: $fontWeightBold;
+  text-transform: uppercase;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  transition: background-color $transitionSlow ease;
+
+  &::before {
+    position: absolute;
+    content: 'NO';
+    left: 4px;
+    top: 2px;
+    width: $toggleBtnSize;
+    height: $toggleBtnSize;
+    background-color: $light;
+    border-radius: $borderRadiusSmall;
+    transition: transform $transitionSlow ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
