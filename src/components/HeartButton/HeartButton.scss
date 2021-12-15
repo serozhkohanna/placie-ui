@@ -11,7 +11,7 @@ $heartIconSize: 35px;
   height: $heartButtonSize;
   background: $white;
   border-radius: $borderRadiusSmall;
-  display: flex;
+  cursor: pointer;
 
   .icon {
     color: $yellow;
