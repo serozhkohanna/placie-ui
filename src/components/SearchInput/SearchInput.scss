@@ -1,6 +1,7 @@
 @import "src/styles/variables";
 @import "src/styles/breakpoints";
 @import "src/styles/colors";
+@import "src/styles/mixins";
 
 .searchWrapper {
   position: relative;
@@ -12,14 +13,13 @@
 }
 
 .iconBtn {
+  @include flexCenter;
+
   position: absolute;
   right: 0;
   top: 0;
   width: $inputSearchHeight;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   .icon {
     font-size: 20px;

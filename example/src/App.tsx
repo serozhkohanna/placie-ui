@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import { Button, Heading, Input, SearchInput, Select, Toggle } from 'placie-ui';
+import { Button, Heading, Input, SearchInput, Select, Toggle, Tag, HeartButton } from 'placie-ui';
 
 const App = () => {
   const handleClick = () => {
@@ -64,6 +64,13 @@ const App = () => {
       isToggled={true}
       onChange={() => console.log('toggle')}
     />
+
+    <Tag
+      text="Word"
+      onClose={() => console.log('close')}
+    />
+
+    <HeartButton onClose={() => console.log('close')} />
   </>;
 };
 

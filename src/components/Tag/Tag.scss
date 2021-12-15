@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+@import "src/styles/mixins";
+
+.tag {
+  @include truncate;
+
+  height: $tagWidth;
+  font-size: $tagFontSize;
+  font-weight: $fontWeightMedium;
+  font-family: $Yantramanav;
+  border-radius: $borderRadiusSmall;
+  color: $white;
+  width: 80px;
+  padding: 5px 10px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+
+  .icon {
+    color: $white;
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+  }
+}
