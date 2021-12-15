@@ -1,12 +1,12 @@
 @import "src/styles/variables";
 @import "src/styles/breakpoints";
 @import "src/styles/colors";
+@import "src/styles/mixins";
 
 .button {
+  @include flexCenter;
+
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: $borderRadiusSmall;
   letter-spacing: $letterSpacingSmall;
 
