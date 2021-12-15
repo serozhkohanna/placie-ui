@@ -4,7 +4,8 @@ import Input from './components/Input/Input';
 import SearchInput from './components/SearchInput/SearchInput';
 import Select from './components/Select/Select';
 import Toggle from './components/Toggle/Toggle';
+import Tag from './components/Tag/Tag';
 
 export * from '../src/styles/reset.scss';
 
-export { Button, Heading, Input, SearchInput, Select, Toggle };
+export { Button, Heading, Input, SearchInput, Select, Toggle, Tag };

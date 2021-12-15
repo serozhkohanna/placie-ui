@@ -6,6 +6,7 @@ $toggleBtnSize: 25px;
 .toggleSwitch {
   position: relative;
   display: inline-block;
+  height: $inputHeight;
 
   input[type="checkbox"] {
     display: none;
