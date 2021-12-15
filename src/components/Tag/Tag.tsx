@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 
 import { FiX } from 'react-icons/fi';
 
@@ -6,7 +6,12 @@ import { getRandomColor } from '../../utils/colorGenerator';
 
 import styles from './Tag.scss';
 
-const Tag = () => {
+interface Props {
+  text: string;
+  onClose: () => void;
+}
+
+const Tag: FC<Props> = ({ text, onClose }: Props) => {
   const [bgColor, setBgColor] = useState<string>('');
 
   useEffect(() => {
@@ -17,8 +22,11 @@ const Tag = () => {
     style={{ 'background': bgColor }}
     className={styles.tag}
   >
-    TAG
-    <FiX className={styles.icon} />
+    {text}
+    <FiX
+      onClick={onClose}
+      className={styles.icon}
+    />
   </div>;
 };
 

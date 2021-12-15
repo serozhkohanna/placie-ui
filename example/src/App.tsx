@@ -65,7 +65,10 @@ const App = () => {
       onChange={() => console.log('toggle')}
     />
 
-    <Tag />
+    <Tag
+      text="Word"
+      onClose={() => console.log('close')}
+    />
   </>;
 };
 
