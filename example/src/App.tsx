@@ -4,6 +4,8 @@ import './index.css';
 
 import { Button, Heading, Input, SearchInput, Select, Toggle, Tag, HeartButton } from 'placie-ui';
 
+import { FaInfoCircle } from 'react-icons/fa';
+
 const App = () => {
   const handleClick = () => {
     console.log('click');
@@ -11,10 +13,10 @@ const App = () => {
 
   return <>
     <Button
-      text="BUTTON"
       level={1}
       disabled={false}
       onClick={handleClick}
+      text="text"
     />
     <Heading
       text="Title text"
@@ -71,6 +73,15 @@ const App = () => {
     />
 
     <HeartButton onClose={() => console.log('close')} />
+
+    <Button
+      level={3}
+      disabled={false}
+      onClick={() => console.log('click')}
+      text="use current location"
+    >
+      <FaInfoCircle />
+    </Button>
   </>;
 };
 

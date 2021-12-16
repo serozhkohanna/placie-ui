@@ -33,5 +33,34 @@
       font-size: 16px;
     }
   }
+
+  &-l3 {
+    text-transform: lowercase;
+    color: $gray-muted;
+    //width: $buttonLevel1Width;
+    //height: $buttonLevel1Height;
+    //background: $gray;
+    //color: $light;
+    //font-size: $buttonLevel1FontSize;
+
+    @include medium {
+      //width: 200px;
+      //height: 50px;
+      //font-size: 16px;
+    }
+
+    & * {
+      color: $gray-muted;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .icon {
+    margin-left: 5px;
+    display: block;
+  }
 }
 
