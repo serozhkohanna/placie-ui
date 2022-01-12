@@ -91,6 +91,13 @@ const App = () => {
     >
       <FaHeart />
     </Button>
+    <Button
+      level={2}
+      disabled={false}
+      onClick={() => console.log('click')}
+      text="SECOND"
+    >
+    </Button>
   </>;
 };
 

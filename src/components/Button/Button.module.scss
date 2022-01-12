@@ -40,6 +40,20 @@
     }
   }
 
+  &-l2 {
+    width: $buttonLevel2Width;
+    height: $buttonLevel2Height;
+    background: $gray;
+    color: $light;
+    font-size: $buttonLevel2FontSize;
+
+    @include medium {
+      width: 90px;
+      height: 30px;
+      font-size: 12px;
+    }
+  }
+
   &-l3 {
     text-transform: lowercase;
     color: $gray-muted;
