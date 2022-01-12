@@ -4,7 +4,7 @@ import './index.css';
 
 import { Button, Heading, Input, SearchInput, Select, Toggle, Tag, HeartButton } from 'placie-ui';
 
-import { FaInfoCircle } from 'react-icons/fa';
+import { FaInfoCircle, FaHeart } from 'react-icons/fa';
 
 const App = () => {
   const handleClick = () => {
@@ -81,6 +81,15 @@ const App = () => {
       text="use current location"
     >
       <FaInfoCircle />
+    </Button>
+
+    <Button
+    level={1}
+    disabled={false}
+    onClick={() => console.log('click')}
+    text="SAVE"
+    >
+      <FaHeart />
     </Button>
   </>;
 };
