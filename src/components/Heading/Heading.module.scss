@@ -4,20 +4,31 @@
 
 .heading {
   font-weight: $fontWeightBold;
-  font-family: $SourceSerifPro;
+  font-family: $Yantramanav;
   color: $gray;
 
   &-h1 {
-    font-family: $Yantramanav;
     font-size: $headingH1;
     text-transform: uppercase;
   }
 
   &-h2 {
     font-size: $headingH2;
+    font-family: $SourceSerifPro;
     @include medium {
       font-size: 36px;
     }
+  }
+
+  &-h3 {
+    font-size: $headingH3;
+    @include medium {
+      font-size: 18px;
+    }
+  }
+
+  &-h4 {
+    font-size: $headingH4;
   }
 }
 

@@ -18,13 +18,44 @@ const App = () => {
       onClick={handleClick}
       text="text"
     />
+    <Button
+      level={1}
+      disabled={false}
+      onClick={() => console.log('click')}
+      text="SAVE"
+    >
+      <FaHeart />
+    </Button>
+    <Button
+      level={2}
+      disabled={false}
+      onClick={() => console.log('click')}
+      text="SECOND"
+    >
+    </Button>
+    <Button
+      level={3}
+      disabled={false}
+      onClick={() => console.log('click')}
+      text="use current location"
+    >
+      <FaInfoCircle />
+    </Button>
     <Heading
-      text="Title text"
+      text="Title text first"
       level={1}
     />
     <Heading
       text="Title text second"
       level={2}
+    />
+    <Heading
+      text="Heading text third"
+      level={3}
+    />
+    <Heading
+      text="Heading text fourth"
+      level={4}
     />
     <Input
       label="Enter place"
@@ -73,31 +104,6 @@ const App = () => {
     />
 
     <HeartButton onClose={() => console.log('close')} />
-
-    <Button
-      level={3}
-      disabled={false}
-      onClick={() => console.log('click')}
-      text="use current location"
-    >
-      <FaInfoCircle />
-    </Button>
-
-    <Button
-    level={1}
-    disabled={false}
-    onClick={() => console.log('click')}
-    text="SAVE"
-    >
-      <FaHeart />
-    </Button>
-    <Button
-      level={2}
-      disabled={false}
-      onClick={() => console.log('click')}
-      text="SECOND"
-    >
-    </Button>
   </>;
 };
 
