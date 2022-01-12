@@ -32,6 +32,36 @@
       height: 50px;
       font-size: 16px;
     }
+
+    .icon {
+      @include flexCenter;
+      margin-left: 10px;
+      font-size: 18px;
+    }
+  }
+
+  &-l3 {
+    text-transform: lowercase;
+    color: $gray-muted;
+    font-size: $buttonLevel3FontSize;
+    font-weight: $fontWeightNormal;
+
+    @include medium {
+      font-size: 14px;
+    }
+
+    & * {
+      color: $gray-muted;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .icon {
+      margin-left: 5px;
+      display: block;
+    }
   }
 }
 
