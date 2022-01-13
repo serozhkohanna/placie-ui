@@ -2,7 +2,20 @@ import React from 'react';
 
 import './index.css';
 
-import { Button, Heading, Input, SearchInput, Select, Toggle, Tag, HeartButton, IconButton, Like } from 'placie-ui';
+import {
+  Button,
+  Heading,
+  Input,
+  SearchInput,
+  Select,
+  Toggle,
+  Tag,
+  HeartButton,
+  IconButton,
+  Like,
+  Label,
+  Stars,
+} from 'placie-ui';
 
 import { FaInfoCircle, FaHeart } from 'react-icons/fa';
 
@@ -101,7 +114,9 @@ const App = () => {
     <Tag
       text="Word"
       onClose={() => console.log('close')}
+      hasCloseButton
     />
+    <Tag text="JUST TAG" />
 
     <HeartButton onClose={() => console.log('close')} />
     <IconButton onClose={() => console.log('close')}>
@@ -115,6 +130,12 @@ const App = () => {
     <Like
       onClick={(value: boolean) => console.log(value)}
       hasLike
+    />
+    <Label text="* Find cool places in you local area (up to 5km)" />
+    <Stars text={'4.5'} />
+    <Stars
+      text={'4.5'}
+      isLarge
     />
   </>;
 };

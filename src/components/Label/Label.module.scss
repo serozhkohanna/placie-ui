@@ -1,0 +1,22 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+
+.label {
+  font-family: $Yantramanav;
+  background: $light;
+  color: $gray-muted;
+  font-size: $bodyFontSizeSmall;
+  border-radius: $borderRadiusSmall;
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  font-weight: $fontWeightNormal;
+
+  .labelIcon {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: $gray;
+  }
+}

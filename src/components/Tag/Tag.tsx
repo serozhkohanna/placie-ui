@@ -8,10 +8,11 @@ import styles from './Tag.scss';
 
 interface Props {
   text: string;
-  onClose: () => void;
+  onClose?: () => void;
+  hasCloseButton?: boolean;
 }
 
-const Tag: FC<Props> = ({ text, onClose }: Props) => {
+const Tag: FC<Props> = ({ text, onClose, hasCloseButton }: Props) => {
   const [bgColor, setBgColor] = useState<string>('');
 
   useEffect(() => {
@@ -23,10 +24,12 @@ const Tag: FC<Props> = ({ text, onClose }: Props) => {
     className={styles.tag}
   >
     {text}
-    <FiX
-      onClick={onClose}
-      className={styles.icon}
-    />
+    {hasCloseButton &&
+      <FiX
+        onClick={onClose}
+        className={styles.icon}
+      />
+    }
   </div>;
 };
 

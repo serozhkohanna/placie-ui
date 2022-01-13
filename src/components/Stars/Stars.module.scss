@@ -1,0 +1,38 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+@import "src/styles/breakpoints";
+
+.stars {
+  font-family: $Yantramanav;
+  font-size: 9px;
+  font-weight: $fontWeightMedium;
+  color: $gray;
+  display: flex;
+  align-items: self-end;
+
+  @include medium {
+    font-size: 12px;
+  }
+
+  &.isLarge {
+    font-size: 20px;
+    color: $gray-muted;
+
+    @include medium {
+      font-size: 14px;
+    }
+
+    .icon {
+      font-size: $starSizeLarge;
+
+      @include medium {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .icon {
+    font-size: $starSize;
+    margin-right: 5px;
+  }
+}

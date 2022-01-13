@@ -8,7 +8,9 @@ import Tag from './components/Tag/Tag';
 import IconButton from './components/IconButton/IconButton';
 import HeartButton from './components/IconButton/HeartButton';
 import Like from './components/Like/Like';
+import Label from './components/Label/Label';
+import Stars from './components/Stars/Stars';
 
 export * from '../src/styles/reset.scss';
 
-export { Button, Heading, Input, SearchInput, Select, Toggle, Tag, IconButton, HeartButton, Like };
+export { Button, Heading, Input, SearchInput, Select, Toggle, Tag, IconButton, HeartButton, Like, Label, Stars };
