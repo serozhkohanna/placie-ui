@@ -5,8 +5,9 @@ import SearchInput from './components/SearchInput/SearchInput';
 import Select from './components/Select/Select';
 import Toggle from './components/Toggle/Toggle';
 import Tag from './components/Tag/Tag';
-import HeartButton from './components/HeartButton/HeartButton';
+import IconButton from './components/IconButton/IconButton';
+import HeartButton from './components/IconButton/HeartButton';
 
 export * from '../src/styles/reset.scss';
 
-export { Button, Heading, Input, SearchInput, Select, Toggle, Tag, HeartButton };
+export { Button, Heading, Input, SearchInput, Select, Toggle, Tag, IconButton, HeartButton };

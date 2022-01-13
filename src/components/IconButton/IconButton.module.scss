@@ -2,19 +2,27 @@
 @import "src/styles/colors";
 @import "src/styles/mixins";
 
-$heartIconSize: 35px;
+$heartIconSize: 25px;
 
-.heartButton {
+.iconButton {
   @include flexCenter;
 
   width: $heartButtonSize;
   height: $heartButtonSize;
   background: $white;
   border-radius: $borderRadiusSmall;
-  cursor: pointer;
+
+  &:hover {
+    filter: contrast(1.2);
+    cursor: pointer;
+  }
 
   .icon {
-    color: $yellow;
     font-size: $heartIconSize;
+    color: $gray;
+
+    &.yellow {
+      color: $yellow;
+    }
   }
 }
