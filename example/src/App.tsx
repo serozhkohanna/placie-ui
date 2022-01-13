@@ -2,7 +2,19 @@ import React from 'react';
 
 import './index.css';
 
-import { Button, Heading, Input, SearchInput, Select, Toggle, Tag, HeartButton, IconButton, Like } from 'placie-ui';
+import {
+  Button,
+  Heading,
+  Input,
+  SearchInput,
+  Select,
+  Toggle,
+  Tag,
+  HeartButton,
+  IconButton,
+  Like,
+  Label,
+} from 'placie-ui';
 
 import { FaInfoCircle, FaHeart } from 'react-icons/fa';
 
@@ -118,6 +130,7 @@ const App = () => {
       onClick={(value: boolean) => console.log(value)}
       hasLike
     />
+    <Label text='* Find cool places in you local area (up to 5km)' />
   </>;
 };
 
