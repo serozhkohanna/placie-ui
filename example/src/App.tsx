@@ -101,6 +101,11 @@ const App = () => {
     <Tag
       text="Word"
       onClose={() => console.log('close')}
+      hasCloseButton
+    />
+    <Tag
+      text="JUST TAG"
+      onClose={() => console.log('close')}
     />
 
     <HeartButton onClose={() => console.log('close')} />
