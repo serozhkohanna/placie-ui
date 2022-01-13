@@ -8,7 +8,7 @@ import styles from './Tag.scss';
 
 interface Props {
   text: string;
-  onClose: () => void;
+  onClose?: () => void;
   hasCloseButton?: boolean;
 }
 

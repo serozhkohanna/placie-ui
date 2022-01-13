@@ -103,10 +103,7 @@ const App = () => {
       onClose={() => console.log('close')}
       hasCloseButton
     />
-    <Tag
-      text="JUST TAG"
-      onClose={() => console.log('close')}
-    />
+    <Tag text="JUST TAG" />
 
     <HeartButton onClose={() => console.log('close')} />
     <IconButton onClose={() => console.log('close')}>
