@@ -16,8 +16,7 @@
   }
 
   &:hover {
-    filter: contrast(1.5);
-    cursor: pointer;
+    @include hover;
   }
 
   &-l1 {

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-import { Button, Heading, Input, SearchInput, Select, Toggle, Tag, HeartButton, IconButton } from 'placie-ui';
+import { Button, Heading, Input, SearchInput, Select, Toggle, Tag, HeartButton, IconButton, Like } from 'placie-ui';
 
 import { FaInfoCircle, FaHeart } from 'react-icons/fa';
 
@@ -104,9 +104,18 @@ const App = () => {
     />
 
     <HeartButton onClose={() => console.log('close')} />
-    <IconButton onClose={() => console.log('close')} >
+    <IconButton onClose={() => console.log('close')}>
       <FaHeart />
     </IconButton>
+
+    <Like
+      onClick={(value: boolean) => console.log(value)}
+      hasLike={false}
+    />
+    <Like
+      onClick={(value: boolean) => console.log(value)}
+      hasLike
+    />
   </>;
 };
 

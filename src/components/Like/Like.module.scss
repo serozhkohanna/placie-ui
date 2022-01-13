@@ -1,0 +1,31 @@
+@import "src/styles/colors";
+@import "src/styles/breakpoints";
+@import "src/styles/mixins";
+@import "src/styles/variables";
+
+.likeButton {
+  display: block;
+  transform: scale(1);
+  transition: transform $transitionSlow ease;
+
+  &:hover {
+    @include hover;
+    transform: scale(1.2);
+  }
+}
+
+.like {
+  font-size: 14px;
+
+  @include medium {
+    font-size: 22px;
+  }
+}
+
+.likeFilled {
+  color: $red;
+}
+
+.likeOutlined {
+  color: $gray;
+}

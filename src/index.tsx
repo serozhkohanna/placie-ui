@@ -7,7 +7,8 @@ import Toggle from './components/Toggle/Toggle';
 import Tag from './components/Tag/Tag';
 import IconButton from './components/IconButton/IconButton';
 import HeartButton from './components/IconButton/HeartButton';
+import Like from './components/Like/Like';
 
 export * from '../src/styles/reset.scss';
 
-export { Button, Heading, Input, SearchInput, Select, Toggle, Tag, IconButton, HeartButton };
+export { Button, Heading, Input, SearchInput, Select, Toggle, Tag, IconButton, HeartButton, Like };

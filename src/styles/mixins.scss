@@ -11,3 +11,9 @@
   justify-content: center;
   @content;
 }
+
+@mixin hover {
+  filter: contrast(1.3);
+  cursor: pointer;
+  @content;
+}

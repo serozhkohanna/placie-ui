@@ -13,8 +13,7 @@ $heartIconSize: 25px;
   border-radius: $borderRadiusSmall;
 
   &:hover {
-    filter: contrast(1.2);
-    cursor: pointer;
+    @include hover;
   }
 
   .icon {
