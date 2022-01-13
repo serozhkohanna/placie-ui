@@ -16,8 +16,7 @@
   }
 
   &:hover {
-    filter: contrast(1.5);
-    cursor: pointer;
+    @include hover;
   }
 
   &-l1 {
@@ -37,6 +36,20 @@
       @include flexCenter;
       margin-left: 10px;
       font-size: 18px;
+    }
+  }
+
+  &-l2 {
+    width: $buttonLevel2Width;
+    height: $buttonLevel2Height;
+    background: $gray;
+    color: $light;
+    font-size: $buttonLevel2FontSize;
+
+    @include medium {
+      width: 90px;
+      height: 30px;
+      font-size: 12px;
     }
   }
 
