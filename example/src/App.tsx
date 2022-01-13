@@ -133,7 +133,10 @@ const App = () => {
     />
     <Label text="* Find cool places in you local area (up to 5km)" />
     <Stars text={'4.5'} />
-    <Stars text={'4.5'} isLarge />
+    <Stars
+      text={'4.5'}
+      isLarge
+    />
   </>;
 };
 

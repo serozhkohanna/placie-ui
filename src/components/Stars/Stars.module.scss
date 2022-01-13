@@ -17,12 +17,14 @@
   &.isLarge {
     font-size: 20px;
     color: $gray-muted;
+
     @include medium {
       font-size: 14px;
     }
 
     .icon {
       font-size: $starSizeLarge;
+
       @include medium {
         font-size: 20px;
       }
