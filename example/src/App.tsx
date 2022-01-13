@@ -14,6 +14,7 @@ import {
   IconButton,
   Like,
   Label,
+  Stars,
 } from 'placie-ui';
 
 import { FaInfoCircle, FaHeart } from 'react-icons/fa';
@@ -130,7 +131,9 @@ const App = () => {
       onClick={(value: boolean) => console.log(value)}
       hasLike
     />
-    <Label text='* Find cool places in you local area (up to 5km)' />
+    <Label text="* Find cool places in you local area (up to 5km)" />
+    <Stars text={'4.5'} />
+    <Stars text={'4.5'} isLarge />
   </>;
 };
 

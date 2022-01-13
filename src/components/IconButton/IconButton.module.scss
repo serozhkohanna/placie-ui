@@ -7,8 +7,8 @@ $heartIconSize: 25px;
 .iconButton {
   @include flexCenter;
 
-  width: $heartButtonSize;
-  height: $heartButtonSize;
+  width: $iconButtonSize;
+  height: $iconButtonSize;
   background: $white;
   border-radius: $borderRadiusSmall;
 
