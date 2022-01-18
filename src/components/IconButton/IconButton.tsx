@@ -4,7 +4,7 @@ import styles from './IconButton.module.scss';
 import classNames from 'classnames';
 
 interface Props {
-  onClose: () => void;
+  onClose: React.FormEventHandler;
   children: ReactNode;
   className?: string;
 }
