@@ -12,6 +12,17 @@
   }
 }
 
+.isActive {
+  .iconBtnZoom {
+    position: absolute;
+    left: 0;
+  }
+
+  .searchInput {
+    padding-left: $inputSearchHeight;
+  }
+}
+
 .searchInput {
   height: $inputSearchHeight;
   font-size: 14px;

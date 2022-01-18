@@ -83,7 +83,7 @@ const App = () => {
       value=""
       placeholder="please enter smth"
       onChange={() => console.log('text')}
-      onClick={() => console.log('text')}
+      onSubmit={() => console.log('text')}
     />
 
     <Select
