@@ -15,14 +15,14 @@
   &-h2 {
     font-size: $headingH2;
     font-family: $SourceSerifPro;
-    @include medium {
+    @include large {
       font-size: 36px;
     }
   }
 
   &-h3 {
     font-size: $headingH3;
-    @include medium {
+    @include large {
       font-size: 18px;
     }
   }
