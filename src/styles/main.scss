@@ -1,0 +1,9 @@
+@import "variables";
+@import "colors";
+
+body {
+  font-family: $Yantramanav;
+  font-size: $bodyFontSize;
+  font-weight: $fontWeightNormal;
+  color: $gray;
+}

@@ -5,11 +5,28 @@
 
 .searchWrapper {
   position: relative;
+  width: 335px;
+
+  @include large {
+    width: 415px;
+  }
+}
+
+.isActive {
+  .iconBtnZoom {
+    position: absolute;
+    left: 0;
+  }
+
+  .searchInput {
+    padding-left: $inputSearchHeight;
+  }
 }
 
 .searchInput {
   height: $inputSearchHeight;
   font-size: 14px;
+  transition: padding-left $transitionSlow ease;
 }
 
 .iconBtn {
@@ -20,6 +37,7 @@
   top: 0;
   width: $inputSearchHeight;
   height: 100%;
+  cursor: pointer;
 
   .icon {
     font-size: 20px;

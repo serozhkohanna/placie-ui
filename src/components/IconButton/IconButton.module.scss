@@ -17,6 +17,8 @@ $heartIconSize: 25px;
   }
 
   .icon {
+    @include flexCenter;
+
     font-size: $heartIconSize;
     color: $gray;
 

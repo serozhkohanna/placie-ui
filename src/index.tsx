@@ -12,5 +12,6 @@ import Label from './components/Label/Label';
 import Stars from './components/Stars/Stars';
 
 export * from '../src/styles/reset.scss';
+export * from '../src/styles/main.scss';
 
 export { Button, Heading, Input, SearchInput, Select, Toggle, Tag, IconButton, HeartButton, Like, Label, Stars };

@@ -17,7 +17,7 @@
 .like {
   font-size: 14px;
 
-  @include medium {
+  @include large {
     font-size: 22px;
   }
 }

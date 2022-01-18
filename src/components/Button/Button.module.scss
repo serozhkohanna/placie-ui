@@ -26,7 +26,7 @@
     color: $light;
     font-size: $buttonLevel1FontSize;
 
-    @include medium {
+    @include large {
       width: 200px;
       height: 50px;
       font-size: 16px;
@@ -46,7 +46,7 @@
     color: $light;
     font-size: $buttonLevel2FontSize;
 
-    @include medium {
+    @include large {
       width: 90px;
       height: 30px;
       font-size: 12px;
@@ -59,7 +59,7 @@
     font-size: $buttonLevel3FontSize;
     font-weight: $fontWeightNormal;
 
-    @include medium {
+    @include large {
       font-size: 14px;
     }
 

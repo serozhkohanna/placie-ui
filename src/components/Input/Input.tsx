@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 
 import classNames from 'classnames';
 
@@ -12,14 +12,34 @@ interface Props {
   type: string;
   placeholder: string;
   name: string;
-  onChange: () => void;
+  onChange: React.FormEventHandler;
   className?: string;
   isRequired?: boolean;
   children?: React.ReactNode;
   customInput?: string;
+  isActive?: Function;
 }
 
-const Input: FC<Props> = ({ label, value, name, type, placeholder, onChange, isRequired, className, children, customInput }: Props) => {
+const Input: FC<Props> = ({
+  label,
+  value,
+  name,
+  type,
+  placeholder,
+  onChange,
+  isRequired,
+  className,
+  children,
+  customInput,
+  isActive,
+}: Props) => {
+
+  const [isFocused, setFocus] = useState<boolean>(false);
+
+  useEffect(() => {
+    isActive && isActive(isFocused);
+  }, [isFocused])
+
   return <div className={classNames(styles.inputWrapper, customInput)}>
     {label &&
       <InputLabel
@@ -36,6 +56,8 @@ const Input: FC<Props> = ({ label, value, name, type, placeholder, onChange, isR
       placeholder={placeholder}
       onChange={onChange}
       className={classNames(styles.input, className)}
+      onFocus={() => setFocus(true)}
+      onBlur={() => setFocus(false)}
     />
     {children}
   </div>;
