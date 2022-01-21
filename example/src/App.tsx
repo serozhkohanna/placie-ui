@@ -118,7 +118,7 @@ const App = () => {
     />
     <Tag text="JUST TAG" />
 
-    <HeartButton onClose={() => console.log('close')} />
+    <HeartButton onClick={() => console.log('close')} />
     <IconButton onClose={() => console.log('close')}>
       <FaHeart />
     </IconButton>

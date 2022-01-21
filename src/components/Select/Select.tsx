@@ -4,6 +4,7 @@ import InputLabel from '../InputLabel/InputLabel';
 import { IOption } from '../../interfaces';
 
 import styles from './Select.scss';
+import classNames from 'classnames';
 
 interface Props {
   name: string;
@@ -11,10 +12,11 @@ interface Props {
   options: IOption[];
   isRequired?: boolean;
   label?: string;
+  className?: string;
 }
 
-const Select: FC<Props> = ({ name, options, isRequired, label, onChange }: Props) => {
-  return <div className={styles.wrapper}>
+const Select: FC<Props> = ({ name, options, isRequired, label, onChange, className }: Props) => {
+  return <div className={classNames(styles.wrapper, className)}>
     {label &&
       <InputLabel
         label={label}
